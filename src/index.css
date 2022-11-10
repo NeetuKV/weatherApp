@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+  display: block;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+.weather-app {
+  background-color: lightskyblue;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.overview {
+  margin-bottom: 20px;
+}
+.weather-temp img {
+  margin-right: 10px;
+  height: 64px;
+  width: 63px;
+}
+.weather-temp strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-family: 400;
+  line-height: 1;
+}
+
+.weather-temp .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+.weather-temp .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.weather-temp .active:hover {
+  text-decoration: none;
+}
+input.form-control {
+  background-color: paleturquoise;
+  color: aliceblue;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
