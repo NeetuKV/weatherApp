@@ -139,4 +139,4 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", changeToCelcius);
 
 search("New York");
-displayForecast();
+//displayForecast();
