@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/index.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-10">
+                <input
+                  type="search"
+                  placeholder="Enter a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-2">
+                <input type="submit" value="search" class="btn btn-primary" />
+              </div>
+            </div>
+          </form>
+          <hr />
+          <div class="row">
+            <div class="col-8">
+              <div class="overview">
+                <h1 id="city"></h1>
+                <ul>
+                  <li>
+                    <span id="date"> </span>, <span id="description"></span>
+                  </li>
+
+                  <li>
+                    Humidity:<span id="humidity"></span>%, Wind:<span
+                      id="wind"
+                    ></span
+                    >m/hr
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="clearfix weather-temp">
+                <img src="" alt="clear" id="icon" class="float-left" />
+                <div class="float-right">
+                  <strong id="temperature">12</strong
+                  ><span class="units"
+                    ><a href="#" id="celcius-link" class="active">°C </a>|
+                    <a href="#" id="farenheit-link">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+        <small>
+          <a href="https://inquisitive-gecko-f9b3bc.netlify.app" target="blank"
+            >NetlifyLink</a
+          >
+          <a href="https://github.com/NeetuKV/weatherApp" target="blank"
+            >GithubLink</a
+          >
+          Coded by Praneetha Rajashekar(PlusWeek8)
+        </small>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
